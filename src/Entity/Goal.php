@@ -38,6 +38,11 @@ class Goal
      */
     private $user;
 
+    public function __toString(): string
+    {
+        return $this->name;
+    }
+
     public function __construct()
     {
         $this->workouts = new ArrayCollection();

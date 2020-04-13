@@ -33,6 +33,11 @@ class DifficultyLevel
      */
     private $workouts;
 
+    public function __toString()
+    {
+        return $this->name;
+    }
+
     public function __construct()
     {
         $this->workouts = new ArrayCollection();
